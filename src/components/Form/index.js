@@ -4,9 +4,7 @@ import api from "../../services/api";
 
 function Form({ simulate, setSimulate }) {
   const [amount, setAmount] = useState(1000);
-
   const [installments, setInstallments] = useState(1);
-
   const [mdr, setMdr] = useState(0);
 
   const simulatedData = (data) => {

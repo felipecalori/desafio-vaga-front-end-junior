@@ -13,35 +13,3 @@ main {
   border-radius: 5px;
   color: gray;
 }
-
-.results {
-  color: rgb(103, 149, 229);
-  display: flex;
-  flex-direction: column;
-  padding: 2.5rem;
-  background-color: rgb(243, 245, 242);
-  font-style: italic;
-  min-width: 10vw;
-  max-width: 10vw;
-}
-
-.results h2 {
-  font-size: 18px;
-  margin-top: 3rem;
-}
-
-.line {
-  width: 100%;
-  height: 0.2px;
-  background-color: rgb(103, 149, 229);
-  margin-top: -10px;
-  margin-bottom: 10px;
-}
-
-.results p {
-  font-size: 11;
-}
-
-.results span {
-  font-weight: bold;
-}
