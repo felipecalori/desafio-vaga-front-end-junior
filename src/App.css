@@ -14,30 +14,6 @@ main {
   color: gray;
 }
 
-.inputvalues {
-  padding-top: 2rem;
-  padding-left: 3rem;
-  padding-right: 0.5rem;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1rem;
-}
-
-.form input {
-  border: 1px solid lightgray;
-  border-radius: 5px;
-  padding: 0.8rem;
-}
-
-.form span {
-  font-size: 11px;
-  color: lightgray;
-  font-weight: bold;
-}
-
 .results {
   color: rgb(103, 149, 229);
   display: flex;
@@ -45,7 +21,8 @@ main {
   padding: 2.5rem;
   background-color: rgb(243, 245, 242);
   font-style: italic;
-  min-width: 20vw;
+  min-width: 10vw;
+  max-width: 10vw;
 }
 
 .results h2 {

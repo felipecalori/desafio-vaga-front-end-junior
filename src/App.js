@@ -1,39 +1,27 @@
+import { useState } from "react";
 import "./App.css";
+import Form from "./components/Form";
 
 function App() {
+  const [simulate, setSimulate] = useState({});
   return (
     <main>
       <div className="main-section">
-        <section className="inputvalues">
-          <h1>Simule sua Antecipação</h1>
-          <div className="form">
-            <label>Informe o valor da venda *</label>
-            <input className="inputValue" type="number"></input>
-          </div>
-          <div className="form">
-            <label>Em quantas parcelas *</label>
-            <input className="inputValue" type="number"></input>
-            <span className="maxvalue">Maximo de 12 parcelas</span>
-          </div>
-          <div className="form">
-            <label>Informe o percentual de MDR *</label>
-            <input className="inputValue" type="number"></input>
-          </div>
-        </section>
+        <Form simulate={simulate} setSimulate={setSimulate} />
         <section className="results">
           <h2>VOCÊ RECEBERÁ:</h2>
           <span className="line"></span>
           <p>
-            Amanhã: <span>R$ 0,00</span>
+            Amanhã: <span>R$ {simulate[1] || 0}</span>
           </p>
           <p>
-            Em 15 dias: <span>R$ 0,00</span>
+            Em 15 dias: <span>R$ {simulate[15] || 0}</span>
           </p>
           <p>
-            Em 30 dias: <span>R$ 0,00</span>
+            Em 30 dias: <span>R$ {simulate[30] || 0}</span>
           </p>
           <p>
-            Em 90 dias: <span>R$ 0,00</span>
+            Em 90 dias: <span>R$ {simulate[90] || 0}</span>
           </p>
         </section>
       </div>
